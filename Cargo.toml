@@ -6,6 +6,6 @@ edition = "2021"
 [dependencies]
 
 [dependencies]
-num_cpus = "1.0"
-os_info = "3.9.2"
-serde = { version = "1.0.202", features = ["derive"] }
+[dependencies]
+constellation-rs = "0.1"
+serde_closure = "0.1"
