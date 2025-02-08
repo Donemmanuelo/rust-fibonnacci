@@ -4,3 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+
+[dependencies]
+num_cpus = "1.0"
+os_info = "3.9.2"
+serde = { version = "1.0.202", features = ["derive"] }
