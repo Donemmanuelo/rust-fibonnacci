@@ -1,4 +1,8 @@
 use std::io;
+use num_bigint::{BigInt, ToBigInt};
+use num_traits::ToPrimitive;
+
+
 
 fn main(){
  
@@ -13,20 +17,20 @@ fn main(){
     //let y: u32 = 1;
 
     //let mut arr: Vec<arr> = Vec::new();
-   let mut arr: Vec<u64> = Vec::new();
+   let mut arr: Vec<BigInt> = Vec::new();
     //let i  = 0;
     //arr[0] = x;
     //arr[1]= y;
     
     for i in 0..=fibo {   
       if i == 0 {
-        arr.push(0)
+        arr.push(0.to_bigint().unwrap())
       }
       else if i == 1 {
-        arr.push(1)
+        arr.push(1.to_bigint().unwrap())
       }
       else {
-       arr.push(arr[i-1] + arr[i - 2]);
+       arr.push(arr[i-1].to_bigint().unwrap() + arr[i - 2].to_bigint().unwrap());
       
     }
 }
