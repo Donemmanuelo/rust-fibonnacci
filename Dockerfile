@@ -9,6 +9,6 @@ FROM debian:latest
 
 RUN apt-get update && apt-get install -y libssl-dev
 
-COPY --from=builder /app/target/release/fibbonacci /app/fibbonacci
+COPY --from=builder /app/target/release/fibbonaci /app/fibbonaci 
 
-CMD ["/app/fibbonacci"]
+CMD ["/app/fibbonaci"]
