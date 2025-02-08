@@ -4,8 +4,5 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-
-[dependencies]
-[dependencies]
 constellation-rs = "0.1"
 serde_closure = "0.1"
